@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(2, 39, 25);
+}
+html, body
+{
+    width: 100%;
+    height: 100%;
+}
+
+article
+{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows:auto 1fr auto ;
+    grid-template-columns: 100%;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+.details
+{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  float: left;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column img{
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column img{
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+#req
+{
+  text-align: center;
+  font-size: 18px;
+}
+
+.ftr
+{
+	text-align: center;
+	background-color: rgb(40, 82, 37);
+	color: whitesmoke;
+}
+/*social media */
+.fa {
+  padding: 6px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+</style>
+<body>
+  <article>
+<header>
+<!-- Header -->
+<div class="header">
+  <h1>FURNISHED APARTMENTS ON MARKET</h1>
+  <p>Furnished Estates, Homes, Hotels and Restaurants on sell.</p>
+</div>
+</header>
+<main>
+<!-- Photo Grid -->
+<div class="row"> 
+
+    <!--Estate-->
+  <div class="column">
+    <img src="images/estate6.png" style="width:100%">
+        <div>
+            <p class="details">Manyatta_Estate<br/>3 Bed Rooms<br/>KSH 2.5 Million</p>
+        </div>
+    <img src="images/estate1.png" style="width:100%">
+    <div>
+        <p class="details">Kondele_Estate<br/>2 Bed Rooms<br/>KSH 3.0 Million</p>
+    </div>
+    <img src="images/estate2.png" style="width:100%">
+    <div>
+        <p class="details">Millimani_Estate<br/>3 Bed Rooms<br/>KHS 2.8 Million</p>
+    </div>
+   
+  </div>
+  <!--Home-->
+  <div class="column">
+    <img src="images/home1.png" style="width:100%">
+    <div>
+        <p class="details">Njogo Road_Homes<br/>4 Bed Rooms + 2 Sitting Rooms<br/>KHS 17.0 Million</p>
+    </div>
+    <img src="images/home2.png" style="width:100%">
+    <div>
+        <p class="details">Lwanda Road_Homes<br/>5 Bed Rooms + 2 Sitting Rooms<br/>KHS 13.0 Million</p>
+    </div>
+    <img src="images/home3.png" style="width:100%">
+    <div>
+        <p class="details">Tokish Road_Homes<br/>4 Bed Rooms + 2 Sitting Rooms<br/>KHS 15.0 Million</p>
+    </div>
+   
+  </div>  
+  <!--Hotel-->
+  <div class="column">
+    <img src="images/hotel1.png" style="width:100%">
+    <div>
+        <p class="details">Naivas Street_Hotels<br/>200 Lodgings + 20 Conference Rooms<br/>KHS 150 Million</p>
+    </div>
+    <img src="images/hotel2.png" style="width:100%">
+    <div>
+        <p class="details">KPLC Tower Street_Hotels<br/>178 Lodgings + 10 Conference Rooms<br/>KHS 200 Million</p>
+    </div>
+    <img src="images/hotels4.png" style="width:100%">
+    <div>
+        <p class="details">Ndunga Beach_Hotels<br/>184 Lodgings + 5 Conference Rooms<br/>KHS 170 Million</p>
+    </div>
+   
+  </div>
+  <!--Restaurant-->
+  <div class="column">
+    <img src="images/recreational1.png" style="width:100%">
+    <div>
+        <p class="details">Dunga Beach_Restaurants<br/>2 Swimming Pools + 20 Lodgings<br/>KHS 180 Million</p>
+    </div>
+    <img src="images/recreational2.png" style="width:100%">
+    <div>
+        <p class="details">Kibos Tower Road_Restaurants<br/>3 Swimming Pools + 35 Lodgings<br/>KHS 196 Million</p>
+    </div>
+    <img src="images/recreational4.png" style="width:100%">
+    <div>
+        <p class="details">Kondele Road_Restaurants<br/>4 Swimming Pools + 50 Lodgings<br/>KHS 210 Million</p>
+    </div>
+   
+  </div>
+</div>
+<div class="details" id="req">
+  <p>Click the link below to send your desired apartment details. <br>
+      Note the <b>Specific Apartment </b>and its <b>Location</b> to fill the request apartment form in the link below.</p>
+      <a href="Buy.php" style="color: rgb(207, 201, 201);">Request Apartment</a>
+</div>
+<br>
+</main>
+<footer class="ftr">
+  <p>&#9978</p>
+	<p>Quality apartment.</p>
+		<hr>
+		<a href="#" class="fa fa-facebook">f</a>
+		<a href="#" class="fa fa-twitter">t</a>
+		<p>Contact:- +254742273610</p>
+		<p>&copy Copyright Millan.All Reserved<br/>Powered by Millan Web Creator.</p>
+</footer>
+  </article>
+</body>
+</html>
